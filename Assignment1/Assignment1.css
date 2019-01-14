@@ -1,0 +1,49 @@
+h1 {
+    font: 24px sans-serif;
+  }
+  .bar {
+    fill: #1c6ed8;
+  }
+  
+  .bar:hover {
+    fill: darkgray;
+  }
+  
+  .dot {
+    fill: #1c6ed8;
+  }
+
+  .axis {
+    font: 10px sans-serif;
+  }
+  
+  .axis path,
+  .axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+  }
+  
+  .x.axis path {
+    display: none;
+  }
+
+  .pie1 {
+    fill: #1c6ed8
+  }
+
+  .pie2 {
+    fill: #c03c42
+  }
+
+  .pie3 {
+    fill: #a4c52d
+  }
+
+  .pie4 {
+    fill: #5d398b
+  }
+
+  .pie5 {
+    fill: #44a3bb
+  }
