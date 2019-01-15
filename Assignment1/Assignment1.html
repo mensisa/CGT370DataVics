@@ -7,9 +7,14 @@
 </head>
 
 <body>
-    <h1>Histogram</h1>
+    <header>
+        <h1>CGT370 Assignment 1</h1>
+        <h1>Yi Zhang</h1>
+    </header>
+
+    <h2>Histogram</h2>
     <svg width="400" height="300">
-        <title id="title">A bar chart showing information</title>
+        <title id="title">A histogram showing information</title>
         <g transform="translate(40,20)">
             <g class="x axis" transform="translate(0,250)">
                 <g class="tick" transform="translate(32.5,0)" style="opacity: 1;">
@@ -83,6 +88,15 @@
                 </g>
                 <path d="M0,0 V250"></path>
                 <path d="M0,250 H315"></path>
+                <path d="M0,225 H315"></path>
+                <path d="M0,200 H315"></path>
+                <path d="M0,175 H315"></path>
+                <path d="M0,150 H315"></path>
+                <path d="M0,125 H315"></path>
+                <path d="M0,100 H315"></path>
+                <path d="M0,75 H315"></path>
+                <path d="M0,50 H315"></path>
+                <path d="M0,25 H315"></path>
                 <text transform="rotate(-90)" y="6" dy=".71em" style="text-anchor: end;"></text>
             </g>
             <rect class="bar" x="15" width="35" y="33.7125" height="216.2875"></rect>
@@ -90,11 +104,23 @@
             <rect class="bar" x="135" width="35" y="120.0125" height="129.9875"></rect>
             <rect class="bar" x="195" width="35" y="223.8375" height="26.1625"></rect>
             <rect class="bar" x="255" width="35" y="232.95" height="17.05"></rect>
+            <text dy=".71em" y="20.7125" x="32.5" style="text-anchor: middle;">17303</text>
+            <text dy=".71em" y="44.5875" x="92.5" style="text-anchor: middle;">15393</text>
+            <text dy=".71em" y="107.0125" x="152.5" style="text-anchor: middle;">10399</text>
+            <text dy=".71em" y="210.8375" x="212.5" style="text-anchor: middle;">2093</text>
+            <text dy=".71em" y="219.95" x="272.5" style="text-anchor: middle;">1364</text>
         </g>
+        <p>
+            From the histogram, I can find out that the shape of the distribution is left skewed unimodel.
+            The span of each bin is 1000, so this is a large span for a bin.
+            Based on what the histogram has, I don't think there is any outliers in this dataset.
+            The maximum y-value is 17303 when x-value is in range of 0 to 1000 and the minimum value is 1364 when
+            x-value is in between 4000 and 5000.
+        </p>
     </svg>
-    <h1>Scatter Plot</h1>
+    <h2>Scatter Plot</h2>
     <svg width="400" height="300">
-        <title id="title">A bar chart showing information</title>
+        <title id="title">A scatter plot showing information</title>
         <g transform="translate(40,20)">
             <g class="x axis" transform="translate(0,250)">
                 <g class="tick" transform="translate(0,0)" style="opacity: 1;">
@@ -149,6 +175,9 @@
                 </g>
                 <path d="M0,0 V250 Z"></path>
                 <path d="M0,250 H300 Z"></path>
+                <path d="M0,187.5 H300 Z"></path>
+                <path d="M0,125 H300 Z"></path>
+                <path d="M0,62.5 H300 Z"></path>
                 <text transform="rotate(-90)" y="6" dy=".71em" style="text-anchor: end;"></text>
             </g>
             <circle class="dot" cx="50" cy="33.7125" data-value="7.2" r="4"></circle>
@@ -156,11 +185,22 @@
             <circle class="dot" cx="150" cy="120.0125" data-value="7.2" r="4"></circle>
             <circle class="dot" cx="200" cy="223.8375" data-value="7.2" r="4"></circle>
             <circle class="dot" cx="250" cy="232.95" data-value="7.2" r="4"></circle>
+            <text dy=".71em" y="17.7125" x="50" style="text-anchor: middle;">17303</text>
+            <text dy=".71em" y="41.5875" x="100" style="text-anchor: middle;">15393</text>
+            <text dy=".71em" y="104.0125" x="150" style="text-anchor: middle;">10399</text>
+            <text dy=".71em" y="207.8375" x="200" style="text-anchor: middle;">2093</text>
+            <text dy=".71em" y="216.95" x="250" style="text-anchor: middle;">1364</text>
         </g>
     </svg>
-    <h1>Line Plot</h1>
+    <p>
+        From the scatter plot, I can see that there might be a negative linear relationship between these two
+        variables,
+        but as there doesn't provides enough data I cannot tell the strength between these two variables.
+        In addition, based on the data that it has so for, there isn't any outliers in the dataset.
+    </p>
+    <h2>Line Plot</h2>
     <svg width="400" height="300">
-        <title id="title">A bar chart showing information</title>
+        <title id="title">A line plot showing information</title>
         <g transform="translate(40,20)">
             <g class="x axis" transform="translate(0,250)">
                 <g class="tick" transform="translate(0,0)" style="opacity: 1;">
@@ -215,6 +255,9 @@
                 </g>
                 <path d="M0,0 V250 Z"></path>
                 <path d="M0,250 H300 Z"></path>
+                <path d="M0,187.5 H300 Z"></path>
+                <path d="M0,125 H300 Z"></path>
+                <path d="M0,62.5 H300 Z"></path>
                 <text transform="rotate(-90)" y="6" dy=".71em" style="text-anchor: end;"></text>
             </g>
             <circle class="dot" cx="50" cy="33.7125" data-value="7.2" r="4"></circle>
@@ -222,20 +265,44 @@
             <circle class="dot" cx="150" cy="120.0125" data-value="7.2" r="4"></circle>
             <circle class="dot" cx="200" cy="223.8375" data-value="7.2" r="4"></circle>
             <circle class="dot" cx="250" cy="232.95" data-value="7.2" r="4"></circle>
-            <polyline fill="none" stroke="#0074d9" stroke-width="3" points="50,33.7125 100,57.5875 150,120.0125 200,223.8375 250,232.95"/>
+            <polyline fill="none" stroke="#0074d9" stroke-width="3" points="50,33.7125 100,57.5875 150,120.0125 200,223.8375 250,232.95" />
         </g>
     </svg>
-    <h1>Pie Chart</h1>
-    <svg width="400" height="300" viewBox="-100 -100 200 200">
-        <g transform="rotate(-133.809014)">
-        <path class="pie1" d="M0,0 L100,0 A100,100 0 0,1 -69.2,72.2 Z"></path>
-        <path class="pie2" d="M0,0 L-69.2,72.2 A100,100 0 0,1 -29.5,-95.6 Z"></path>
-        <path class="pie3" d="M0,0 L-29.5,-95.6 A100,100 0 0,1 89.3,-45.0 Z"></path>
-        <path class="pie4" d="M0,0 L89.3,-45.0 A100,100 0 0,1 98.3,-18.3 Z"></path>
-        <path class="pie5" d="M0,0 L98.3,-18.3 A100,100 0 0,1 100,0 Z"></path>
-        </g>
+    <p>
+        From the line plot, I can clearly see the negative relationship between these two variables as I found out in
+        the scatter plot.
+        Therefore, in the long term, I can predict that the trend of this plot will decrease, when the variable on the
+        x-axis increase.
+    </p>
+    <h2>Pie Chart</h2>
+    <svg width="100" height="100">
+        <rect class="pie1" x="0" y="0" width="15" height="15"></rect>
+        <text dy=".71em" x="25" y="0" style="text-anchor: right;">0~1000</text>
+        <rect class="pie2" x="0" y="20" width="15" height="15"></rect>
+        <text dy=".71em" x="25" y="20" style="text-anchor: right;">1000~2000</text>
+        <rect class="pie3" x="0" y="40" width="15" height="15"></rect>
+        <text dy=".71em" x="25" y="40" style="text-anchor: right;">2000~3000</text>
+        <rect class="pie4" x="0" y="60" width="15" height="15"></rect>
+        <text dy=".71em" x="25" y="60" style="text-anchor: right;">3000~4000</text>
+        <rect class="pie5" x="0" y="80" width="15" height="15"></rect>
+        <text dy=".71em" x="25" y="80" style="text-anchor: right;">4000~5000</text>
     </svg>
 
+    <svg width="400" height="300" viewBox="-100 -100 300 200">
+        <title id="title">A pie chart showing information</title>
+        <g transform="rotate(-133.809014)">
+            <path class="pie1" d="M0,0 L100,0 A100,100 0 0,1 -69.2,72.2 Z"></path>
+            <path class="pie2" d="M0,0 L-69.2,72.2 A100,100 0 0,1 -29.5,-95.6 Z"></path>
+            <path class="pie3" d="M0,0 L-29.5,-95.6 A100,100 0 0,1 89.3,-45.0 Z"></path>
+            <path class="pie4" d="M0,0 L89.3,-45.0 A100,100 0 0,1 98.3,-18.3 Z"></path>
+            <path class="pie5" d="M0,0 L98.3,-18.3 A100,100 0 0,1 100,0 Z"></path>
+        </g>
+    </svg>
+    <p>
+        From the pie cahrt, majority of the y-value fall in range 0 to 1000, nearly one third of the y-value are in
+        range 1000 to 2000.
+        In addition, range 4000 to 5000 has the lowest proportion of y-value.
+    </p>
 </body>
 
 </html>
