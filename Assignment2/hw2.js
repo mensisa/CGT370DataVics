@@ -7,12 +7,12 @@ svg.attr("width", width)
     
 var group = svg.append("g");
 
-var epidemic_a = {
-    "Report": 24,
+var data = {
+    "Report": 32,
     "Death": 5,
     "Country": "South Africa"
 };
-create_graph(epidemic_a);
+create_graph(data);
 
 function create_graph(dist) {
     var report = dist["Report"];
