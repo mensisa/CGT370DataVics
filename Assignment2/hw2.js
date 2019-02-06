@@ -1,5 +1,5 @@
 var svg = d3.select(".canvas").append("svg"),
-    width = 800,
+    width = 600,
     height = 200;
 
 svg.attr("width", width)
@@ -8,8 +8,8 @@ svg.attr("width", width)
 var group = svg.append("g");
 
 var data = {
-    "Report": 26,
-    "Death": 6,
+    "Report": 90,
+    "Death": 15,
     "Country": "South Africa"
 };
 create_graph(data);
@@ -21,21 +21,36 @@ function create_graph(dist) {
     var sur = report - death;
     var row = 3;
     var x = 0;
-    var n = parseInt(report / 9);
-    width = Math.ceil(report / 9) * 120;
+    var y = 0;
+    var n = Math.ceil(report / 9);
+    if (n >= 5){
+        height = Math.ceil(report / 45) * 200;
+        console.log("width is "+ width);  
+    } else {
+        width = Math.ceil(report / 9) * 120;
+        console.log("width is "+ width);   
+    }
+    
     svg.attr("width", width)
         .attr("height", height);
     for (var i = 0; i <= n; i++) {
+        if (i >= 5) {
+            y = Math.floor(i / 5) * 200;
+            console.log("y is "+y);
+            if (i % 5 == 0) {
+                x = 0;
+            }
+        }
         if (sur >= 9) {
             console.log(x);
             console.log(report);
             sur -= 9;
-            create_diamond(row, 9, x);
+            create_diamond(row, 9, x, y, report);
         } else {
             sur %= 9;
             console.log(x);
             console.log(report);
-            create_diamond(row, sur, x, report);
+            create_diamond(row, sur, x, y, report);
             sur = 0;
         }
         report -= 9;
@@ -92,13 +107,15 @@ function create_pyramid(n, sur, cx, re) {
 }
 */
 //This is the function that create a diamond shape
-function create_diamond(n, sur, cx, re) {
+function create_diamond(n, sur, cx, cy, re) {
     var counter = 0;
-    var y = 0;
+    var y = cy;
+    console.log("cy is "+ y);
     for (var i = 0; i < n; i++) {
         group.attr("class", "unit" + i);
         var x = cx;
         y += 30;
+        console.log("This y is "+ y);
         // This loop is for creating empty space
         for (var j = 1; j < n - i; j++) {
             x += 20;
@@ -129,6 +146,7 @@ function create_diamond(n, sur, cx, re) {
         group.attr("class", "unit" + i);
         var x = cx;
         y += 30;
+        console.log("This y is "+ y);
         // This loop is for creating empty space
         for (var j = 0; j < n - i; j++) {
             x += 20;
