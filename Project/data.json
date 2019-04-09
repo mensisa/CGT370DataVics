@@ -1,0 +1,161 @@
+{
+    "name": "occupation",
+    "children": [
+        {
+            "name": "Management, professional, and related occupations",
+            "children": [
+                {
+                    "name": "Management, business, and financial operations occupations",
+                    "children": [
+                        {
+                            "name": "Business and financial operations occupations",
+                            "children": []
+                        },
+                        {
+                            "name": "Management occupations",
+                            "children": [
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Professional and related occupations",
+                    "children": [
+                        {
+                            "name": "Architecture and engineering occupations",
+                            "children": [
+                            ]
+                        },
+                        {
+                            "name": "Arts, design, entertainment, sports, and media occupations",
+                            "children": [
+                            ]
+                        },
+                        {
+                            "name": "Community and social service occupations",
+                            "children": [
+                            ]
+                        },
+                        {
+                            "name": "Computer and mathematical occupations",
+                            "children": [
+                            ]
+                        },
+                        {
+                            "name": "Education, training, and library occupations",
+                            "children": [
+                            ]
+                        },
+                        {
+                            "name": "Healthcare practitioners and technical occupations",
+                            "children": [
+                            ]
+                        },
+                        {
+                            "name": "Legal occupations",
+                            "children": [
+
+                            ]
+                        },
+                        {
+                            "name": "Life, physical, and social science occupations",
+                            "children": [
+
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Natural resources, construction, and maintenance occupations",
+            "children": [
+                {
+                    "name": "Construction and extraction occupations",
+                    "children": [
+                    ]
+                },
+                {
+                    "name": "Farming, fishing, and forestry occupations",
+                    "children": [
+
+                    ]
+                },
+                {
+                    "name": "Installation, maintenance, and repair occupations",
+                    "children": [
+
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Production, transportation, and material moving occupations",
+            "children": [
+                {
+                    "name": "Production occupations",
+                    "children": [
+
+                    ]
+                },
+                {
+                    "name": "Transportation and material moving occupations",
+                    "children": [
+
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Sales and office occupations",
+            "children": [
+                {
+                    "name": "Office and administrative support occupations",
+                    "children": [
+
+                    ]
+                },
+                {
+                    "name": "Sales and related occupations",
+                    "children": [
+
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Service occupations",
+            "children": [
+                {
+                    "name": "Building and grounds cleaning and maintenance occupations",
+                    "children": [
+
+                    ]
+                },
+                {
+                    "name": "Food preparation and serving related occupations",
+                    "children": [
+
+                    ]
+                },
+                {
+                    "name": "Healthcare support occupations",
+                    "children": [
+
+                    ]
+                },
+                {
+                    "name": "Personal care and service occupations",
+                    "children": [
+
+                    ]
+                },
+                {
+                    "name": "First-line supervisors of correctional officers",
+                    "ID": "2.2.1",
+                    "size": 1
+                }
+            ]
+        }
+    ]
+}

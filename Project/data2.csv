@@ -1,0 +1,211 @@
+Child,Parent
+BG,
+Africa,BG
+Americas,BG
+Eastern Mediterranean,BG
+Europe,BG
+South-East Asia,BG
+Western Pacific,BG
+AFR D,Africa
+AFR E,Africa
+AMR A,Americas
+AMR B,Americas
+AMR D,Americas
+EMR B,Eastern Mediterranean
+EMR D,Eastern Mediterranean
+EUR A,Europe
+EUR B,Europe
+EUR C,Europe
+SEAR B,South-East Asia
+SEAR D,South-East Asia
+WPR A,Western Pacific
+WPR B,Western Pacific
+Algeria,AFR D
+Angola,AFR D
+Benin,AFR D
+Burkina Faso,AFR D
+Cameroon,AFR D
+Cabo Verde,AFR D
+Chad,AFR D
+Equatorial Guinea,AFR D
+Gabon,AFR D
+Gambia,AFR D
+Ghana,AFR D
+Guinea,AFR D
+Guinea-Bissau,AFR D
+Liberia,AFR D
+Madagascar,AFR D
+Mali,AFR D
+Mauritania,AFR D
+Mauritius,AFR D
+Niger,AFR D
+Nigeria,AFR D
+Sao Tome and Principe,AFR D
+Senegal,AFR D
+Seychelles,AFR D
+Sierra Leone,AFR D
+Togo,AFR D
+Botswana,AFR E
+Burundi,AFR E
+Central African Republic,AFR E
+Congo,AFR E
+Cote d'Ivoire,AFR E
+Democratic Republic of the Congo,AFR E
+Eritrea,AFR E
+Ethiopia,AFR E
+Kenya,AFR E
+Lesotho,AFR E
+Malawi,AFR E
+Mozambique,AFR E
+Namibia,AFR E
+Rwanda,AFR E
+South Africa,AFR E
+Eswatini,AFR E
+Uganda,AFR E
+United Republic of Tanzania,AFR E
+Zambia,AFR E
+Zimbabwe,AFR E
+Canada,AMR A
+Cuba,AMR A
+United States of America,AMR A
+Antigua and Barbuda,AMR B
+Argentina,AMR B
+Bahamas,AMR B
+Barbados,AMR B
+Belize,AMR B
+Brazil,AMR B
+Chile,AMR B
+Colombia,AMR B
+Costa Rica,AMR B
+Dominica,AMR B
+Dominican Republic,AMR B
+El Salvador,AMR B
+Grenada,AMR B
+Guyana,AMR B
+Honduras,AMR B
+Jamaica,AMR B
+Mexico,AMR B
+Panama,AMR B
+Paraguay,AMR B
+Saint Kitts and Nevis,AMR B
+Saint Lucia,AMR B
+Saint Vincent and the Grenadines,AMR B
+Suriname,AMR B
+Trinidad and Tobago,AMR B
+Uruguay,AMR B
+"Venezuela, Bolivarian Republic of",AMR B
+Bolivia,AMR D
+Ecuador,AMR D
+Guatemala,AMR D
+Haiti,AMR D
+Nicaragua,AMR D
+Peru,AMR D
+Bahrain,EMR B
+Cyprus,EMR B
+"Iran, Islamic Republic of",EMR B
+Jordan,EMR B
+Kuwait,EMR B
+Lebanon,EMR B
+Liberia,EMR B
+Oman,EMR B
+Qatar,EMR B
+Saudi Arabia,EMR B
+Syrian Arab Republic,EMR B
+Tunisia,EMR B
+United Arab Emirates,EMR B
+Afghanistan,EMR D
+Djibouti,EMR D
+Egypt,EMR D
+Iraq,EMR D
+Morocco,EMR D
+Pakistan,EMR D
+Somalia,EMR D
+Sudan,EMR D
+Yemen,EMR D
+Andorra,EUR A
+Austria,EUR A
+Belgium,EUR A
+Croatia,EUR A
+Czech Republic,EUR A
+Denmark,EUR A
+Finland,EUR A
+France,EUR A
+Germany,EUR A
+Greece,EUR A
+Iceland,EUR A
+Ireland,EUR A
+Israel,EUR A
+Italy,EUR A
+Luxembourg,EUR A
+Malta,EUR A
+Monaco,EUR A
+Netherlands,EUR A
+Norway,EUR A
+Portugal,EUR A
+San Marino,EUR A
+Slovenia,EUR A
+Spain,EUR A
+Sweden,EUR A
+Switzerland,EUR A
+United Kingdom,EUR A
+Albania,EUR B
+Armenia,EUR B
+Azerbaijan,EUR B
+Bosnia and Herzegovina,EUR B
+Bulgaria,EUR B
+Georgia,EUR B
+Kyrgyzstan,EUR B
+Poland,EUR B
+Romania,EUR B
+Slovakia,EUR B
+Tajikistan,EUR B
+Turkey,EUR B
+Turkmenistan,EUR B
+Uzbekistan,EUR B
+Belarus,EUR C
+Estonia,EUR C
+Hungary,EUR C
+Kazakhstan,EUR C
+Latvia,EUR C
+Lithuania,EUR C
+Republic of Moldova,EUR C
+Russian Federation,EUR C
+Ukraine,EUR C
+Indonesia,SEAR B
+Sri Lanka,SEAR B
+Thailand,SEAR B
+Timor-Leste,SEAR B
+Bangladesh,SEAR D
+Bhutan,SEAR D
+Republic of Korea,SEAR D
+India,SEAR D
+Maldives,SEAR D
+Myanmar,SEAR D
+Nepal,SEAR D
+Australia,WPR A
+Brunei Darussalam,WPR A
+Japan,WPR A
+New Zealand,WPR A
+Singapore,WPR A
+Cambodia,WPR B
+China,WPR B
+Cook Islands,WPR B
+Fiji,WPR B
+Kiribati,WPR B
+Lao People's Democratic Republic,WPR B
+Malaysia,WPR B
+Marshall Islands,WPR B
+"Micronesia, Federated States of",WPR B
+Mongolia,WPR B
+Nauru,WPR B
+Niue,WPR B
+Palau,WPR B
+Papua New Guinea,WPR B
+Philippines,WPR B
+Republic of Korea,WPR B
+Samoa,WPR B
+Solomon Islands,WPR B
+Tonga,WPR B
+Tuvalu,WPR B
+Vanuatu,WPR B
+Viet Nam,WPR B
