@@ -3,6 +3,7 @@
 <head>
     <title>Simple Circle Pack (d3 v4; CSV; 50 Lines)</title>
     <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="d3-hierarchy.v1.min.js"></script>
 </head>
 
 <style>
@@ -25,12 +26,16 @@
     var g = d3.select('svg').attr('width', vWidth).attr('height', vHeight).select('g');
 
     // Get the data from our CSV file
-    d3.csv('data1.csv', function(error, vCsvData) {
-        if (error) throw error;
-        console.log(vCsvData);
-        vData = d3.stratify()(vCsvData);
-        drawViz(vData);
+    d3.csv('data1.csv', function(data){
+        console.log(data);
+        var vData = d3.stratify()
+        .id(function(d) { return d.name; })
+        .parentId(function(d) { return d.parent; })
+        (data);
+        console.log(vData);
+    drawViz(vData);
     });
+    //console.log(vCsvData);
 
     function drawViz(vData) {
         // Declare d3 layout

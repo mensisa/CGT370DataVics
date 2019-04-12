@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<head>
+    <title>Simple Circle Pack (d3 v4; CSV; 50 Lines)</title>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="d3-hierarchy.v1.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <span>
+        <button onclick="downloadFile">导出json文件</button>
+        <a target="_blank" id="downid" download></a>
+    </span>
+</body>
+<style>
+    circle {
+        stroke: white;
+        fill: #05668D;
+        opacity: 0.3;
+        stroke-width: 2px;
+    }
+</style>
+<svg>
+    <g></g>
+</svg>
+
+<script>
+    downloadFile();
+    function downloadFile() {
+        d3.csv('data1.csv', function (data) {
+            var vData = d3.stratify()
+                .id(function (d) { return d.name; })
+                .parentId(function (d) { return d.parent; })
+                (data);
+            console.log(vData);
+            if (typeof navigator !== "undefined" && navigator.msSaveOrOpenBlob) {
+                //兼容ie10
+                var blob = new Blob([JSON.stringify(vData, null, 2)], {
+                    type: "data:application/json;charset=utf-8"
+                });
+                navigator.msSaveOrOpenBlob(blob, "test.json");
+            } else {
+                var downloadBtn = $("#downid")[0];
+                var jsonData = "data:application/json;charset=utf-8";
+                downloadBtn.href = jsonData;
+                downloadBtn.target = "_blank";
+                downloadBtn.download = "test.json";
+                downloadBtn.click();
+            }
+        });
+    }
+</script>
