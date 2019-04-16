@@ -5,16 +5,40 @@
 <head>
     <title>circle packing</title>
     <link rel="stylesheet" type="text/css" href="circular packing.css">
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="http://d3js.org/queue.v1.min.js"></script>
+    <script src="https://d3js.org/d3-scale.v3.min.js"></script>
+    <script src="https://d3js.org/d3-hierarchy.v1.min.js"></script>
+    <script src="https://d3js.org/d3-color.v1.min.js"></script>
+    <script src="https://d3js.org/d3-dispatch.v1.min.js"></script>
+    <script src="https://d3js.org/d3-ease.v1.min.js"></script>
+    <script src="https://d3js.org/d3-interpolate.v1.min.js"></script>
+    <script src="https://d3js.org/d3-selection.v1.min.js"></script>
+    <script src="https://d3js.org/d3-timer.v1.min.js"></script>
+    <script src="https://d3js.org/d3-transition.v1.min.js"></script>
+    <script src="https://d3js.org/d3-dsv.v1.min.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
 </head>
 
 <body style="text-align: center">
+
+    <div id="overlay">
+        <h1 id="title">Overlay Text</h1>
+        <div id="pie_div"></div>
+        <div id="line_div"></div>
+        <button id="overlay-button" onclick="off()">Back</button>
+    </div>
     <div id="chart"></div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
-    <script src="http://d3js.org/queue.v1.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="circular packing.js"></script>
-
-
+    <div id="packing">
+        <svg width="960" height="960"></svg>
+    </div>
+    <script>
+        
+    </script>
+    <!--<script src="circular packing.js"></script>-->
+    <script src="cp.js"></script>
 </body>
 
 
