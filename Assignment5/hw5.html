@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+
+<head>
+    <title>hw5</title>
+    <link rel="stylesheet" type="text/css" href="hw5.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+<body>
+    <h1 style="font-size: 30pt; text-align: center">US map</h1>
+    <div id="background" class="tabBox">
+        <div id="us" class="flexBox1">
+            <div id="us-chart" placeholder="One"></div>
+        </div>
+        <div id="state" class="flexBox1">
+            <div id="state-chart" placeholder="Two"></div>
+        </div>
+    </div>
+    <filter id="filter">
+        <feGaussianBlur stdDeviation="5" />
+    </filter>
+    <mask id="mask">
+        <circle cx="50%" cy="50%" rx="25%" ry="25%" fill="white" filter="url(#filter)"></circle>
+    </mask>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/topojson.v2.min.js"></script>
+    <script src="hw5.js"></script>
+</body>
+
+</html>

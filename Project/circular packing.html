@@ -19,26 +19,134 @@
     <script src="https://d3js.org/d3-dsv.v1.min.js"></script>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="d3-tip.js"></script>
 
 </head>
 
-<body style="text-align: center">
+<body
+    style="text-align: center; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif">
 
     <div id="overlay">
         <h1 id="title">Overlay Text</h1>
-        <div id="pie_div"></div>
+        <div id="pie_div" align="center"></div>
         <div id="line_div"></div>
         <button id="overlay-button" onclick="off()">Back</button>
     </div>
-    <div id="chart"></div>
-    <div id="packing">
-        <svg width="960" height="960"></svg>
+    <h1 id="title">Interactive Data Visualization for Measles Immunization Coverage</h1>
+    <div class="bg">
+        <div id="try_it_out">
+            <div id="searchDiv">
+                <textarea id="searchText"></textarea>
+                <button id="search" onclick="searchClick()">Search</button>
+            </div>
+            <div id="displayRegionDiv">
+                <label>Region</label>
+                <textarea id="displayRegion"></textarea>
+            </div>
+            <div id="displayAreaDiv">
+                <label>Area</label>
+                <textarea id="displayArea"></textarea>
+            </div>
+            <div class="column_ins">
+                <div class="try_row" id="card_ins1">
+                    <div class="card">
+                        <p id="ins1">Step 1!</p>
+                        <p id="instruction">Click on inner area to zoom in and see each Regions! Click on outer area to
+                            zoom out! </p>
+                    </div>
+                </div>
+                <div class="try_row" id="card_ins2">
+                    <div class="card">
+                        <p id="ins2">Step 2!</p>
+                        <p id="instruction">Keep clicking on inner circles to see more details!</p>
+                    </div>
+                </div>
+                <div class="try_row" id="card_ins3">
+                    <div class="card">
+                        <p id="ins3">Step 3!</p>
+                        <p id="instruction">Click on smallest white circles to view dashboard for each country!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            document.getElementById("searchText").value = "";
+            document.getElementById("displayRegion").value = "";
+            document.getElementById("displayArea").value = "";
+            document.getElementById("card_ins2").setAttribute("hidden", "");
+            document.getElementById("card_ins3").setAttribute("hidden", "");
+            document.getElementById("displayRegion").readOnly = true;
+            document.getElementById("displayArea").readOnly = true;
+        </script>
+
+        <div id="packing">
+
+            <div id="p_intro_div">
+                <!---
+                <p id="p_intro">This data visualization provides interaction to view the measles immunization coverage
+                    for countries
+                    around the world using a circle packing technique. Each largest circle represents a region (Africa,
+                    Eastern Mediterranean, Western Pacific, Europe, Americas and South-East Asia). Each circle within
+                    the
+                    largest is divided by sub-regions and the smallest circles represent countries. With this
+                    visualization
+                    it is possible to view the percentage of people who have been given the measles vaccination from
+                    1980 to
+                    2017 in comparison to those who haven’t. The data has been collected from WHO (World Health
+                    Organization).</p> --->
+            </div>
+            <svg id="cp" width="700" height="700"></svg>
+        </div>
+
+        <!--Introduction of team members-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <div class="column">
+            <div class="row">
+                <div class="card">
+                    <img src="Carol.png" style="width:100%">
+                    <div class="container">
+                        <h2>Qingyuan(Carol) Hu</h2>
+                        <p class="title">CEO & Founder</p>
+                        <p>Sophomore majoring in Computer Information Technology with a concentration in Databases.
+                        </p>
+                        <p>hu528@purdue.edu</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="card">
+                    <img src="Yi.png" style="width:100%">
+                    <div class="container">
+                        <h2>Yi Zhang</h2>
+                        <p class="title">Programmar</p>
+                        <p>Junior majoring in Computer Information Technology with a concentration in Databases.</p>
+                        <p>zhan3050@purdue.edu</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="card">
+                    <img src="Kanak.png" style="width:100%">
+                    <div class="container">
+                        <h2>Kanak Dhawan</h2>
+                        <p class="title">Designer</p>
+                        <p>Junior majoring in Data Visualization and Web Programming and Design with a minor in Art
+                            and
+                            Design Studio.</p>
+                        <p>dhawank@purdue.edu</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <script>
-        
-    </script>
     <!--<script src="circular packing.js"></script>-->
     <script src="cp.js"></script>
+
+
+
 </body>
 
 
